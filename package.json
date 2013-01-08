@@ -1,0 +1,28 @@
+{
+  "author": "Glen R. Goodwin (http://www.arei.net)",
+  "name": "FWF",
+  "keywords": ["javascript","functions","fun","playground"],
+  "description": "Fun with Functions - A Playground for JavaScript Function goofiness",
+  "version": "0.1.0",
+  "homepage": "http://github.com/arei/FWF",
+  "bugs": {
+        "url": "http://github.com/arei/FWF/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/arei/node-untappd/blob/master/LICENSE.txt"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arei/FWF.git"
+  },
+  "main": "FunWithFunctions.js",
+  "engines": {
+    "node": ">=0.8.15"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
