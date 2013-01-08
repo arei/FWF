@@ -46,27 +46,27 @@ Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Func
 
 Each of the functions given returns a modified function which will then display the characteristics described.
 
-*Again* - Allows you to call a function multiple times without supplying the arguments again.
+**Again* - Allows you to call a function multiple times without supplying the arguments again.
 
-*All* - Given a series of functions, call all of them in the order given, one after another, with the same initial arguments.
+**All** - Given a series of functions, call all of them in the order given, one after another, with the same initial arguments.
 
-*Any* - Given a series of functions, call exactly one of the function, randomly determined.
+**Any** - Given a series of functions, call exactly one of the function, randomly determined.
 
-*Jumble* - Given a series of functions, call all of them in a random order, one after another, with the same initial arguments.  Each function will run exactly once and each call will results in a different random execution pattern.
+**Jumble** - Given a series of functions, call all of them in a random order, one after another, with the same initial arguments.  Each function will run exactly once and each call will results in a different random execution pattern.
 
-*Log* - Write to `console.log` or `console.error` after a function is called.  `console.log` is used if the function returns normally, while `console.error` is used if the function throws an exception. Write additional details of the function is also a `Profile` function (see below).
+**Log** - Write to `console.log` or `console.error` after a function is called.  `console.log` is used if the function returns normally, while `console.error` is used if the function throws an exception. Write additional details of the function is also a `Profile` function (see below).
 
-*OnCompletion* - Fires a callback function after the given function has executed regardless of whether or not it returned normally or threw an exception.
+**OnCompletion** - Fires a callback function after the given function has executed regardless of whether or not it returned normally or threw an exception.
 
-*OnException* - fires a callback function after the given function has executed if, and only if, the given function threw an exception.
+**OnException** - fires a callback function after the given function has executed if, and only if, the given function threw an exception.
 
-*OnReturn* - fires a callback function after the given function has execute if, and only if, the given function did not throw an exception.
+**OnReturn** - fires a callback function after the given function has execute if, and only if, the given function did not throw an exception.
 
-*Profile* - Record each execution of a function, how long it ran for, and if it threw an exception or not.  The data from a profile function can be retrieved using getProfileData on the profiled function.
+**Profile** - Record each execution of a function, how long it ran for, and if it threw an exception or not.  The data from a profile function can be retrieved using getProfileData on the profiled function.
 
-*Record* - Record each execution including it's arguments, context, results, exceptions, etc.  You can then retreives a history of results, exceptions or executions.  You may also redo n calls back or rerun a given call.
+**Record** - Record each execution including it's arguments, context, results, exceptions, etc.  You can then retreives a history of results, exceptions or executions.  You may also redo n calls back or rerun a given call.
 
-*Repeat* - Repeats the given function n number of times.
+**Repeat** - Repeats the given function n number of times.
 
 See each individual files in the FWF folder for the details about usage.
 
