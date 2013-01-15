@@ -46,7 +46,7 @@ Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Func
 
 Each of the functions given returns a modified function which will then display the characteristics described.
 
-**Again* - Allows you to call a function multiple times without supplying the arguments again.
+**Again** - Allows you to call a function multiple times without supplying the arguments again.
 
 **All** - Given a series of functions, call all of them in the order given, one after another, with the same initial arguments.
 
