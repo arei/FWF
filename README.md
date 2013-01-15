@@ -50,7 +50,7 @@ Each of the functions given returns a modified function which will then display 
 
 **All** - Given a series of functions, call all of them in the order given, one after another, with the same initial arguments.
 
-**Any** - Given a series of functions, call exactly one of the function, randomly determined.
+**Any** - Given a series of functions, call exactly one of the functions, randomly determined.
 
 **Jumble** - Given a series of functions, call all of them in a random order, one after another, with the same initial arguments.  Each function will run exactly once and each call will results in a different random execution pattern.
 
