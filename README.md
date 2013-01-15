@@ -2,7 +2,7 @@ FWF
 -------
 Fun with Functions - A Playground for JavaScript Function goofiness 
 
-Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Functions and exploring what creative things can be done with them. Some of these approaches are useful, some are not, and some are just plain weird.  Maybe you will find some value in them, maybe not.
+Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Functions and exploring what creative things can be done with them. Some of these approaches are useful, some are not, and some are just plain weird.  Maybe you will find some value in them, maybe not. Also, new ideas are being added here, so make sure to watch us...
 
 ## Using FWF in NodeJS
 
@@ -17,7 +17,7 @@ Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Func
  3. Use our calls...
 
  	var f = function() { ... do something ... };
- 	var g = FWF.Repeat(f,5); // when g() is execute it will actually execute f 5 times in a row.
+ 	var g = FWF.Repeat(f,5); // when g() is executed it will actually execute f 5 times in a row.
  	g(1,2,3); // this is equivilent to doing f(1,2,3); f(1,2,3); f(1,2,3); f(1,2,3); f(1,2,3); 
 
  4. OR you can install FWF on the Function Prototype...
@@ -34,7 +34,7 @@ Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Func
  2. Access FWF from the global object (window).
 
  	var f = function() { ... do something ... };
- 	var g = FWF.Repeat(f,5); // when g() is execute it will actually execute f 5 times in a row.
+ 	var g = FWF.Repeat(f,5); // when g() is executed it will actually execute f 5 times in a row.
  	g(1,2,3); // this is equivilent to doing f(1,2,3); f(1,2,3); f(1,2,3); f(1,2,3); f(1,2,3); 
  
  3. OR you can install FWF on the Function Prototype.
@@ -44,7 +44,7 @@ Fun With Funcation, or FWF, is a playground for goofing off with JavaScript Func
 
 ## What Can you Do with FWF
 
-Each of the functions given returns a modified function which will then display the characteristics described.
+Each of the functions below returns a new function which will then display the characteristics described.
 
 **Again** - Allows you to call a function multiple times without supplying the arguments again.
 
@@ -68,10 +68,10 @@ Each of the functions given returns a modified function which will then display 
 
 **Repeat** - Repeats the given function n number of times.
 
-See each individual files in the FWF folder for the details about usage.
+See each individual file in the FWF folder for the details about usage.
 
 ## Contributing
 
-This repository is open to ideas and suggestions of your own interesting function code, so feel free to push your own ideas and we'll take a look at them. Please only one to a file and make sure to include a test of the name `TestXYZ.js` if your function file is `XYZ.js`
+This repository is open to ideas and suggestions of your own interesting function code, so feel free to push your own ideas and we'll take a look at them. Please only one function to a file and make sure to include a test of the name `TestXYZ.js` if your function file is `XYZ.js`
 
 
