@@ -54,7 +54,7 @@ Each of the functions given returns a modified function which will then display 
 
 **Jumble** - Given a series of functions, call all of them in a random order, one after another, with the same initial arguments.  Each function will run exactly once and each call will results in a different random execution pattern.
 
-**Log** - Write to `console.log` or `console.error` after a function is called.  `console.log` is used if the function returns normally, while `console.error` is used if the function throws an exception. Write additional details of the function is also a `Profile` function (see below).
+**Log** - Write to `console.log` or `console.error` after a function is called.  `console.log` is used if the function returns normally, while `console.error` is used if the function throws an exception. Write additional details of the function if it is also a `Profile` function (see below).
 
 **OnCompletion** - Fires a callback function after the given function has executed regardless of whether or not it returned normally or threw an exception.
 
