@@ -60,7 +60,7 @@ Each of the functions given returns a modified function which will then display 
 
 **OnException** - fires a callback function after the given function has executed if, and only if, the given function threw an exception.
 
-**OnReturn** - fires a callback function after the given function has execute if, and only if, the given function did not throw an exception.
+**OnReturn** - fires a callback function after the given function has executed if, and only if, the given function did not throw an exception.
 
 **Profile** - Record each execution of a function, how long it ran for, and if it threw an exception or not.  The data from a profile function can be retrieved using getProfileData on the profiled function.
 
