@@ -11,6 +11,7 @@ var FunWithFunctions = {
 	Jumble: 			require("./FWF/Jumble.js"),
 	Record: 			require("./FWF/Record.js"),
 	Again: 				require("./FWF/Again.js"),
+	ArgRequired: 		require("./FWF/ArgRequired.js")
 };
 
 var toArray = function(a){

@@ -11,3 +11,4 @@ require("./tests/OnReturnTest.js");
 require("./tests/ProfileTest.js");
 require("./tests/RecordTest.js");
 require("./tests/RepeatTest.js");
+require("./tests/ArgRequiredTest.js");
