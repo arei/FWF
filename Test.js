@@ -1,13 +1,13 @@
-var FWF = require("./FunWithFunctions");
+var tests = require("./FunWithFunctions");
 
-require("./FWF/AgainTest.js");
-require("./FWF/AllTest.js");
-require("./FWF/AnyTest.js");
-require("./FWF/JumbleTest.js");
-require("./FWF/LogTest.js");
-require("./FWF/OnCompletionTest.js");
-require("./FWF/OnExceptionTest.js");
-require("./FWF/OnReturnTest.js");
-require("./FWF/ProfileTest.js");
-require("./FWF/RecordTest.js");
-require("./FWF/RepeatTest.js");
+require("./tests/AgainTest.js");
+require("./tests/AllTest.js");
+require("./tests/AnyTest.js");
+require("./tests/JumbleTest.js");
+require("./tests/LogTest.js");
+require("./tests/OnCompletionTest.js");
+require("./tests/OnExceptionTest.js");
+require("./tests/OnReturnTest.js");
+require("./tests/ProfileTest.js");
+require("./tests/RecordTest.js");
+require("./tests/RepeatTest.js");
