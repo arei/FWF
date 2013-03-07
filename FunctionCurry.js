@@ -4,6 +4,28 @@
 		return Array.prototype.splice.call(a,a);
 	};
 
+	var isFunction = function(f) {
+		return (f && typeof f === "function");
+	};
+
+	var wrap = function(f,g) {
+		if (!f || !isFunction(f)) throw new Error("First argument f must be a function.");
+		if (!g || !isFunction(g)) throw new Error("Second argument g must be a function.");
+
+		var h = function() {
+			var args = toArray(arguments);
+			args.unshift(f);
+
+			return g.apply(this,args);
+		};
+
+		h.unwrap = function() {
+			return f;
+		};
+
+		return h;
+	};
+
 	/* 
 		FunctionCurry
 
@@ -28,25 +50,32 @@
 		var args = toArray(arguments);
 		args.shift();
 
-		var g = function() {
+		var g = wrap(f,function($super) {
 			var a = toArray(arguments);
+			a.shift();
+
 			var b = Array.prototype.concat.call(args);
 			for (var i=0;i<b.length;i++) {
 				if (b[i]===undefined && a.length>0) b[i] = a.shift();
 			}
 			b = b.concat(a);
-			return f.apply(this,b);
-		};
+
+			return $super.apply(this,b);
+		});
 
 		g.uncurry = function() {
 			return f;
 		};
 		
 		return g;
-	}
+	};
 
-	if (typeof global!=="undefined" && module && module.exports) module.exports = curry;
+	if (typeof global!=="undefined" && module && module.exports) module.exports = {
+		curry: curry,
+		wrap: wrap 
+	};
 	if (typeof window!=="undefined") window.FunctionCurry = curry;
+	if (typeof window!=="undefined") window.FunctionWrap = wrap;
 
 })();
 
